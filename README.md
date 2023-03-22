@@ -1,6 +1,6 @@
-#Setting up Terraform
+# Setting up Terraform
 
-##Installations
+## Installations
 
 Install AWS CLI in the command line 
 `brew install awscli`
@@ -12,7 +12,7 @@ Install AWS vault
 Install Terraform
 `brew install terraform`
 
-##Setting up AWS
+## Setting up AWS
 
 Configuring AWS
 `aws configure --profile tf-intro`
@@ -30,14 +30,15 @@ Configure AWS vault `aws-vault add tf-intro`
 Check if this works: `aws-vault exec tf-intro -- aws sts get-caller-identity`
 *This should print a JSON object with user info to the console*
 
-##Connecting Terraform
+## Connecting Terraform
 
 `aws-vault exec tf-intro -- terraform init`
 
 To run:
-`aws-vault exec tf-intro -- terraform apply` *Run this when you make changes, type 'yes' to confirm changes*
+`aws-vault exec tf-intro -- terraform apply` 
+*Run this when you make changes, type 'yes' to confirm changes*
 
-##Further learning resources:
+## Further learning resources:
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 https://www.youtube.com/watch?v=V4waklkBC38
 https://developer.hashicorp.com/terraform/docs
